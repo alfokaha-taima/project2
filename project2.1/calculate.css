@@ -1,0 +1,243 @@
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        padding: 0px;
+        margin: 0px;
+        background: white;
+    }
+
+    .container {
+       
+        display: grid;
+        margin: auto;
+     
+        width: 50%;
+        min-height: 50vh;
+        grid-template-columns: repeat(5, 80px);
+        grid-template-rows: minmax(111px, auto) repeat(5, 80px);
+        justify-content: center;
+        padding: 3px;
+        
+
+    }
+    
+    .output {
+        grid-column: 1/-1;
+
+    }
+
+    .one {
+        width: 100%;
+        height: 100%;
+        background: white;
+        color: red;
+        font-size: 40px;
+        text-align: right;
+        border-radius: 20px 20px 20px 20px ;
+        box-shadow: red 1px 1px 1px 2px;
+        margin: -2% 
+        
+    }
+   
+    input[type=text]:disabled {
+border: white;
+background: white;
+}
+button:hover {
+background-color: rgb(20, 9, 9);
+}
+
+    
+/*button desigen*/
+.but{
+   border-radius: 20rem;
+   font-size: 45px;
+   color: red;
+   background: white;
+   border: white ;
+   box-shadow: whitesmoke 3px 3px 3px 2px;
+   margin: 3px;
+}
+.Del{
+   grid-column: span 3;
+}
+
+      
+@media screen and (max-width:600px) {
+    .but{
+   border-radius: 7rem;
+   font-size: 20px;
+   color: red;
+   background: white;
+   border: white ;
+   box-shadow: whitesmoke 0.5px 0.5px 0.5px 0.3px;
+   margin: 1px;
+}
+.container {
+
+
+       
+       display: grid;
+       margin: auto;
+      
+       width: 98%;
+       min-height: 50vh;
+       grid-template-columns: repeat(5, 70px);
+       grid-template-rows: minmax(90px, auto) repeat(5, 70px);
+       justify-content: center;
+       
+
+   }
+    
+}     
+
+@media screen and (max-width:800px ) and (min-width: 500px) {
+    .but{
+   border-radius: 12rem;
+   font-size: 30px;
+   color: red;
+   background: white;
+   border: white ;
+   box-shadow: whitesmoke 2px 2px 2px 2px;
+   margin: 1px;
+}
+.container {
+       
+       display: grid;
+       margin: auto;
+      
+       width: auto;
+       padding: 20px;
+       min-height: 50vh;
+       grid-template-columns: repeat(5, 55px);
+       grid-template-rows: minmax(90px, auto) repeat(5, 70px);
+       justify-content: center;
+       grid-gap: 30px
+       
+
+   }
+    
+}   
+
+@media screen and (max-width:320px) {
+    .but{
+   border-radius: 7rem;
+   font-size: 20px;
+   color: red;
+   background: white;
+   border: white ;
+   box-shadow: whitesmoke 0.5px 0.5px 0.5px 0.3px;
+   margin: 1px;
+}
+.container {
+       
+       display: grid;
+       margin: auto;
+      
+       width: auto;
+       min-height: 50vh;
+       grid-template-columns: repeat(5, 55px);
+       grid-template-rows: minmax(90px, auto) repeat(5, 70px);
+       justify-content: center;
+       
+
+   }
+    
+}   
+ 
+@media screen and (max-width:320px) {
+    .but{
+   border-radius: 7rem;
+   font-size: 20px;
+   color: red;
+   background: white;
+   border: white ;
+   box-shadow: whitesmoke 0.5px 0.5px 0.5px 0.3px;
+   margin: 1px;
+}
+.container {
+       
+       display: grid;
+       margin: auto;
+      
+       width: auto;
+       min-height: 50vh;
+       grid-template-columns: repeat(5, 55px);
+       grid-template-rows: minmax(90px, auto) repeat(5, 70px);
+       justify-content: center;
+       
+
+   }
+    
+}     
+
+
+
+
+body.dark {
+	background: #292C35;
+}
+
+.checkbox {
+	opacity: 0;
+	
+}
+
+.label {
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	
+
+	padding: 5px;
+	
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

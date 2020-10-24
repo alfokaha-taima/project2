@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculate.css">
+</head>
+</head>
+
+    <body>
+        <audio id="myAudio">
+            <source src="Metal Reflect-SoundBible.com-977435034.mp3" type="audio/ogg">
+            </audio>
+            
+            <div>
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+                  
+                   
+                    <div class="ball"></div>
+                </label>
+            
+            <div class="container">
+            <div class="output"><input class="one" type="text" id="result" name="result" placeholder="0" disabled/></div>
+
+
+
+            <button  class="Del but opr" type="button" value="DEL" onclick="playAudio();calculate('c')">DEL</button>
+            <button class="but opr " type="button" value="AC" onclick="playAudio();clr()">AC</button>
+
+            <button class="but opr" type="button" value="/" onclick="playAudio(); dis('/')" > /</button>
+            <button class="but" type="button" value="7" onclick="playAudio();dis('7')">7</button>
+            <button class="but" type="button" value="8" onclick="playAudio();dis('8')">8</button>
+            <button class="but" type="button" value="9" onclick="playAudio();dis('9')">9</button>
+            <button class="but opr" type="button" value="-" onclick="playAudio();dis('-')">-</button>
+            <button class="but opr" type="button" value="*" onclick="playAudio();dis('*')">*</button>
+            <button class="but" type="button" value="4" onclick="playAudio();dis('4')">4</button>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <button class="but" type="button" value="5" onclick="playAudio();dis('5')">5</button>
+            
+            
+            <button class="but" type="button" value="6" onclick="playAudio();dis('6')">6</button>
+            <button class="but opr" type="button" value="+" onclick="playAudio();dis('+')">+</button>
+            <button class="but opr" type="button" value="." onclick="playAudio();dis('.')">.</button>
+          
+            <button class="but" type="button" value="1" onclick="playAudio();dis('1')">1</button>
+            <button class="but" type="button" value="2" onclick="playAudio();dis('2')">2</button>
+            <button class="but" type="button" value="3" onclick="playAudio();dis('3')">3</button>
+            
+            
+            
+            
+           
+            
+            
+            
+            <button class="but opr" type="button" value="'result'^2" onclick="playAudio();squer()">x<sup>2</sup></button>
+            
+            
+            <button class="but opr" type="button" value="(x!)" onclick="playAudio();factorial()">x!</button>
+            
+            <button class="but Del opr" class="assig" type="button" value="=" onclick="playAudio();solve()">=</button>
+            <button class="but opr " type="button" value="0" onclick="playAudio();dis('0')">0</button>
+            <button class="but opr" type="button" value="(-)" onclick="playAudio();doMath()">(-)</button>
+        </div>
+        
+        <script src="calculate.js"></script>
+        
+        
+        
+        
+        
+    
+
+
+    </body>
+
+</html>
